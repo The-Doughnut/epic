@@ -1,3 +1,5 @@
+//READ ME: Most browsers will STOP JAVASCRIPT ENTIRELY upon clicking in the window once. Please enable pop-ups (for some reason this affects javascript) and refresh the page.
+
 let img;
 let mySound;
 let myProblem; 
@@ -9,6 +11,7 @@ let randomNumberL;
 function preload(){
   soundFormats('mp3');
   mySound = loadSound('https://the-doughnut.github.io/webserver/sounds/trololol_V2.mp3');
+  //p5js hates loading local files (why???) so I had to host them
 }
 
 function setup() {
@@ -65,6 +68,44 @@ function mousePressed(){
 
 function keyPressed(){
 	clear();
+	//mapping keys (sorry for spaghetti code)
+	if(key == "q"){
+		myWindow = window.open("q.htm", "", "width=320,height=240");
+	}
+	if(key == "w"){
+		myWindow = window.open("w.htm", "", "width=320,height=240");
+	}
+	if(key == "e"){
+		myWindow = window.open("e.htm", "", "width=320,height=240");
+	}
+	if(key == "y"){
+		myWindow = window.open("y.htm", "", "width=320,height=240");
+	}
+	if(key == "u"){
+		myWindow = window.open("u.htm", "", "width=320,height=240");
+	}
+	if(key == "i"){
+		myWindow = window.open("i.htm", "", "width=320,height=240");
+	}
+	if(key == "o"){
+		myWindow = window.open("o.htm", "", "width=320,height=240");
+	}
+	if(key == "p"){
+		myWindow = window.open("p.htm", "", "width=320,height=240");
+	}
+	if(key == "a"){
+		myWindow = window.open("a.htm", "", "width=320,height=240");
+	}
+	if(key == "s"){
+		myWindow = window.open("s.htm", "", "width=320,height=240");
+	}
+	if(key == "d"){
+		myWindow = window.open("d.htm", "", "width=320,height=240");
+	}
+	if(key == "f"){
+		myWindow = window.open("f.htm", "", "width=320,height=240");
+	}
+	
 	if(key == "b"){
 		myWindow = window.open("b.htm", "", "width=320,height=240");
 	}
@@ -75,7 +116,6 @@ function keyPressed(){
 		myWindow = window.open("t.htm", "", "width=320,height=240");
 	}
 	
-	//reminder to myself: make a window which implements mouse press
 }
 
 function randomiser(){
