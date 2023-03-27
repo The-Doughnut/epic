@@ -94,7 +94,8 @@ function keyPressed(){
 		myWindow = window.open("p.htm", "", "width=320,height=240");
 	}
 	if(key == "a"){
-		myWindow = window.open("a.htm", "", "width=320,height=240");
+		myWindow = window.open("a.htm", "", "width=640,height=480");
+		myWindow = window.open("soundMessage.htm", "", "width=300,height=100");
 	}
 	if(key == "s"){
 		myWindow = window.open("s.htm", "", "width=320,height=240");

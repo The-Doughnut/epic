@@ -63,6 +63,17 @@ function jprbButton(){
 	jprb.play();
 }
 
+function stopSound(){
+	tone.stop();
+	redbox.stop();
+	usdt.stop();
+	ukdt.stop();
+	jpdt.stop();
+	usrb.stop();
+	ukrb.stop();
+	jprb.stop();
+}
+
 function helpButton(){
 	alert("Click the first button to hear a 2600Hz tone (loud).\nClick the second button to hear a red box sound $0.25.\nThe second row are examples of dial tones around the world.\nThe third row are examples of ringback tones around the world.");
 }
